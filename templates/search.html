@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/static/css/search.css" />
+<div class="search">
+  <input
+  type="text"
+  class="locationInput"
+  id="locationInput"
+  {% if not locationName %}
+  placeholder="Search city"
+  {% else %}
+  placeholder="{{locationName}}"
+  {% endif %}
+/>
+  <button onclick="getWeather()" class="searchBtn">search</button>
+</div>
+<script src="/static/js/search.js"></script>
